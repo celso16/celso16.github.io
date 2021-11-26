@@ -7,30 +7,104 @@
     <title>Cadastro</title>
 </head>
 <body>
-    <div>
-        <h1>Formulario de Inscrição</h1>
-    </div>
-
+    <fieldset>
+        <h3>Formulario de Inscrição</h3>
+        <p>Preencha os campos</p>
+        </div>
+    
     <form>
-        <fieldset>
-            <div>
-                <label>Nome</label>
-                <input type="text" name ="nome" id ="nome">
-            </div>
-
-            <div>
-                <label>Sobrenome</label>
-                <input type="text" name ="sobrenome" id="sobrenome">
-            </div>
-        </fieldset>
 
         <div>
-            <label>Email</label>
-            <input type="email" name="email" id="email">
-            
-        </div>
+        <label>Nome</label>
+        <input type="text" id ="nome">
+            </div>
 
+            <br>
+
+        <div>
+        <label>Sobrenome</label>
+        <input type="text" id="sobrenome">
+            </div>
+
+            <br>
+
+        <div>
+        <label>Idade</label>
+        <input type="number" id="numero" max="120" min="18">
+            </div>
+
+            <br>
+
+        <div>
+        <label>Email</label>
+        <input type="email"  id="email">
+            </div>
+            
+            <br>
+
+        <div>
+            <label>Sexo</label>
+            <input type="radio" name="sexo" value="Masculino">Masculino
+            <input type="radio" name="sexo" value="Feminino">Feminino
+            </div>
+
+            <br>
+
+        <div>
+            <label>Foto</label>
+            <label for="myfile">Selecione uma foto:</label> 
+            <input type="file" id="myfile" accept="image/png,] image/jpeg" ><br><br>
+            <input type="submit">
+            </div>
+
+            <br>
+
+        <div>
+            <label for="cars">País:</label>
+            <select name="país" id="país">
+            <option value="">Argentina</option>
+            <option value="Brasil">Brasil</option>
+            <option value="Venezuela">Venezuela</option>
+            <option value="Canadá">Canadá</option>
+            </select>
+            </div>
+
+                <br>
+
+            <div>
+            <label for="linguagens">As linguagens que você prefere?</label>
+            <select name="cars" id="cars" multiple>
+            <option value="java">Java</option>
+            <option value="C#">C#</option>
+            <option value="C++">C++</option>
+            <option value="Kotlin">Kotlin</option>
+            <option value="javascript">Javascript</option>
+            </select>
+            </div>
+
+            <br>
+            
+            <div>
+                <input type="checkbox" name="Computação" id="comp">
+                <label for="Computação">Computação</label>
+                <input type="checkbox" name="Gestão" id="gest">
+                <label for="Gestão">Gestão</label>
+                <input type="checkbox" name="Pedagogia" id="pdg">
+                <label for="Pedagogia">Pedagogia</label>
+            </div>
+
+            <br>
+            
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
     </form>
-    
+
+    </fieldset>
+    <style>
+        label{
+            display: inline-block;
+            width: 115px;
+        }
+    </style>
 </body>
 </html>
